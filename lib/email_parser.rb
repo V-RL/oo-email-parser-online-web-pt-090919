@@ -6,7 +6,7 @@ class EmailAddressParser
   attr_accessor :parse
   
   def initialize(parse)
-    @parse = parse.gsub(/\s+/, ' ').strip.split(" ")
+    @parse = parse.gsub(/\s+/m, ' ').strip.split(" ")
   end 
   
 end
